@@ -8,6 +8,7 @@ Click on a boilerplate below for usage details:
 
 * [core-jquery](core-jquery/) (uses [Kendo UI Core](https://github.com/telerik/kendo-ui-core) and jQuery via Bower)
 * [professional-jquery](professional-jquery/) (uses Kendo UI Professional and jQuery via Bower)
+* [core-jquery-mobile](core-mobile-jquery/) (uses Kendo [Mobile/Hybrid Widgets](http://demos.telerik.com/kendo-ui/m/index) and jQuery via Bower)
 
 ## License
 

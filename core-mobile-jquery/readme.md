@@ -1,6 +1,6 @@
-# Kendo UI Professional jQuery Boilerplate
+# Kendo UI Core Mobile jQuery Boilerplate
 
-A Kendo UI Professional jQuery boilerplate to get you started.
+A Kendo UI Core jQuery Mobile boilerplate to get you started.
 
 ### Prerequisities
 
@@ -36,13 +36,11 @@ From the boilerplate directory, in your terminal, run the following commands:
 $ npm install
 ```
 
-Then run (You'll be asked for your Telerik username and password credentials):
+Then run:
 
 ```
 $ bower install
 ```
-
-Note: In order to avoid retyping your credentials, you may cache them. The easiest way to do that is to store them as plain text in a [.netrc file](http://www.mavetju.org/unix/netrc.php). See the [documentation for more details](http://docs.telerik.com/kendo-ui/intro/installation/bower-install#kendo-ui-professional).
 
 This will install the required [npm](https://www.npmjs.com/) and [Bower](http://bower.io/) packages.
 

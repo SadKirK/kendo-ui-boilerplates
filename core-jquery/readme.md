@@ -1,6 +1,6 @@
 # Kendo UI Core jQuery Boilerplate
 
-A Kendo UI Core jQuery Boilerplate to get you started.
+A Kendo UI Core jQuery boilerplate to get you started.
 
 ### Prerequisities
 
