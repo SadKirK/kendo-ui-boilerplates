@@ -1,30 +1,30 @@
 # Kendo UI Core jQuery Boilerplate
 
-A Kendo UI Core jQuery Boilerplate to get you started
+A Kendo UI Core jQuery Boilerplate to get you started.
 
 ### Prerequisities
 
 * [Node.js/npm](https://nodejs.org/)
 
-## Getting Started
-
-Clone this repository or download a ZIP. Discard all other boilerplates except the one you want to use. Open the boilerplate directory you want to use in your terminal.
-
 ### Installing
+
+Clone this repository or download a ZIP. Discard all other boilerplates except the one you want to use.
 
 Open the boilerplate directory you want to use in your terminal.
 
-Run the following terminal commands
+Run the following terminal commands:
 
 ```
 > npm install
 ```
 
+This will install the required [npm](https://www.npmjs.com/) and [bower](http://bower.io/) packages.
+
 ### Running
 
-Open the boilerplate directory you want to use in your terminal.
+Open a terminal from the boilerplate directory (i.e. core-jquery).
 
-Run the following npm scripts commands
+Run the following [npm scripts](https://docs.npmjs.com/misc/scripts) commands:
 
 ```
 > npm run dev-server

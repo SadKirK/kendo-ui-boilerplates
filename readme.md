@@ -4,7 +4,7 @@ A set of Kendo UI Boilerplates to get you started
 
 ## Kendo UI Boilerplates Avaliable
 
-* [core-jquery](core-jquery/readme.md)
+* [core-jquery](core-jquery/)
 
 ### Prerequisities
 
