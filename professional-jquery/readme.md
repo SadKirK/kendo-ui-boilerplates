@@ -28,9 +28,9 @@ $ git clone https://github.com/kendo-labs/kendo-ui-boilerplates.git
 
 Or, download a [ZIP](https://github.com/kendo-labs/kendo-ui-boilerplates/archive/master.zip) of this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates).
 
-Discard all other boilerplates except the one you want to use in the directory you cloned or downloaded.
+Discard all other boilerplates except the one you want to use.
 
-Open the boilerplate directory you want to use in your terminal.
+Open the boilerplate directory in your terminal.
 
 Run the following terminal commands:
 
