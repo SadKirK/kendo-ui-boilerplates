@@ -1,5 +1,4 @@
 *DS_Store
 .log
 node_modules
-/core-jquery/dev-server/bower_packages/
 /*.log

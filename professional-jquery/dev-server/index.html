@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Kendo UI Core jQuery Boilerplate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- REQUIRED -->
+
+    <!-- common CSS -->
+    <link rel="stylesheet" href="./bower_packages/kendo-ui/styles/kendo.common.min.css" />
+
+    <!-- CSS theme -->
+    <link rel="stylesheet" href="./bower_packages/kendo-ui/styles/kendo.material.min.css" />
+
+    <!-- OPTIONAL -->
+
+    <!-- Right-to-left CSS -->
+    <!--<link rel="stylesheet" href="./bower_packages/kendo-ui/styles//kendo.rtl.min.css" /> -->
+
+    <!-- DataViz common CSS -->
+    <!-- <link rel="stylesheet" href="./bower_packages/kendo-ui/styles//kendo.dataviz.min.css" /> -->
+
+    <!-- DataViz CSS theme -->
+    <!-- <link rel="stylesheet" href="./bower_packages/kendo-ui/styles//kendo.dataviz.default.min.css" /> -->
+
+    <!-- mobile CSS -->
+    <!-- <link rel="stylesheet" href="./bower_packages/kendo-ui/styles//kendo.mobile.common.min.css" /> -->
+
+    <!-- mobile CSS theme -->
+    <!-- <link rel="stylesheet" href="./bower_packages/kendo-ui/kendo-ui/styles//kendo.mobile.[SELECT A THEME].min.css" /> -->
+
+    <!-- load jQuery before Kendo UI -->
+    <script src="./bower_packages/jquery/dist/jquery.js"></script>
+
+    <!-- load Kendo UI after the browser has loaded and parsed jQuery -->
+    <script src="./bower_packages/kendo-ui/src/js/kendo.all.js"></script>
+
+</head>
+
+<body>
+    <div id="grid"></div>
+    <script>
+        $(document).ready(function() {
+            $("#grid").kendoGrid({
+                dataSource: {
+                    type: "odata",
+                    transport: {
+                        read: "//demos.telerik.com/kendo-ui/service/Northwind.svc/Orders"
+                    },
+                    schema: {
+                        model: {
+                            fields: {
+                                OrderID: {
+                                    type: "number"
+                                },
+                                Freight: {
+                                    type: "number"
+                                },
+                                ShipName: {
+                                    type: "string"
+                                },
+                                OrderDate: {
+                                    type: "date"
+                                },
+                                ShipCity: {
+                                    type: "string"
+                                }
+                            }
+                        }
+                    },
+                    pageSize: 20,
+                    serverPaging: true,
+                    serverFiltering: true,
+                    serverSorting: true
+                },
+                height: 550,
+                filterable: true,
+                sortable: true,
+                pageable: true,
+                columns: [{
+                        field: "OrderID",
+                        filterable: false
+                    },
+                    "Freight", {
+                        field: "OrderDate",
+                        title: "Order Date",
+                        format: "{0:MM/dd/yyyy}"
+                    }, {
+                        field: "ShipName",
+                        title: "Ship Name"
+                    }, {
+                        field: "ShipCity",
+                        title: "Ship City"
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>

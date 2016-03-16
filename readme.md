@@ -1,10 +1,11 @@
 # Kendo UI Boilerplates
 
-A set of Kendo UI Boilerplates to get you started
+A set of Kendo UI Boilerplates to get you started.
 
 ## Kendo UI Boilerplates Avaliable
 
-* [core-jquery](core-jquery/)
+* [core-jquery](core-jquery/) (uses Kendo UI core and jQuery via Bower)
+* [professional-jquery](core-jquery/) (uses Kendo UI Professional and jQuery via Bower)
 
 ## License
 
