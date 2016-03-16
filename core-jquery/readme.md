@@ -42,7 +42,7 @@ Run the following [npm scripts](https://docs.npmjs.com/misc/scripts) commands:
 > npm run dev-server
 ```
 
-This will open the `index.html` page at localhost:4000 using [browsersync](https://www.browsersync.io/). Browsersync has been setup to reload after any changes to any `.html`, `.css`, or `.js `files in the `dev-server` directory.
+This will open the `index.html` page at localhost:4000 in your default browser using [browsersync](https://www.browsersync.io/). Browsersync has been setup to reload after any changes to any `.html`, `.css`, or `.js `files in the `dev-server` directory.
 
 ## License
 
