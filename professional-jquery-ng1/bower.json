@@ -1,0 +1,20 @@
+{
+  "name": "kendo-ui-core-jquery-boilerplate",
+  "description": "A Kendo UI Core Boilerplate to get you started",
+  "main": "",
+  "authors": [
+    "Cody Lindley <cody.lindley@telerik.com>"
+  ],
+  "license": "Apache-2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "kendo-ui": "https://bower.telerik.com/bower-kendo-ui.git#~2016.1.226"
+  }
+}
