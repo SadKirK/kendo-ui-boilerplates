@@ -1,6 +1,6 @@
 # Kendo UI Boilerplates
 
-A set of Kendo UI boilerplates to get you started.
+A set of Kendo UI boilerplates to get you started with Kendo UI and your style of development.
 
 ## Kendo UI Boilerplates Avaliable
 
