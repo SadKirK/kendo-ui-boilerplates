@@ -30,9 +30,7 @@ Or, download a [ZIP](https://github.com/kendo-labs/kendo-ui-boilerplates/archive
 
 Discard all other boilerplates except the one you want to use.
 
-Open the boilerplate directory in your terminal.
-
-Run the following terminal commands:
+From the boilerplate directory, in your terminal, run the following commands:
 
 ```
 $ npm install
@@ -48,7 +46,7 @@ This will install the required [npm](https://www.npmjs.com/) and [Bower](http://
 
 ### Running
 
-Open a terminal from the boilerplate directory (i.e. core-jquery).
+Open a terminal from the boilerplate directory.
 
 Run the following [npm scripts](https://docs.npmjs.com/misc/scripts) commands:
 
