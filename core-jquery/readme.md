@@ -4,7 +4,13 @@ A Kendo UI Core jQuery Boilerplate to get you started.
 
 ### Prerequisities
 
-* [Node.js/npm](https://nodejs.org/)
+Install or Update [Node.js/npm](https://nodejs.org/)
+
+Once you have Node.js/npm working open a terminal and install [Bower](http://bower.io/) globally by running:
+
+```
+> npm install bower -g
+```
 
 ### Installing
 
@@ -18,7 +24,13 @@ Run the following terminal commands:
 > npm install
 ```
 
-This will install the required [npm](https://www.npmjs.com/) and [bower](http://bower.io/) packages.
+Then run:
+
+```
+> bower install
+```
+
+This will install the required [npm](https://www.npmjs.com/) and [Bower](http://bower.io/) packages.
 
 ### Running
 
