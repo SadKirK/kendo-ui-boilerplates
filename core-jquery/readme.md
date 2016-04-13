@@ -22,7 +22,7 @@ SSH:
 $ git clone git@github.com:kendo-labs/kendo-ui-boilerplates.git
 ```
 
-or, HTTPS:
+or, https:
 
 ```
 $ git clone https://github.com/kendo-labs/kendo-ui-boilerplates.git

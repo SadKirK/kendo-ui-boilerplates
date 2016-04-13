@@ -16,11 +16,13 @@ $ npm install bower -g
 
 Git Clone this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates).
 
+SSH:
+
 ```
 $ git clone git@github.com:kendo-labs/kendo-ui-boilerplates.git
 ```
 
-or
+or, https:
 
 ```
 $ git clone https://github.com/kendo-labs/kendo-ui-boilerplates.git
