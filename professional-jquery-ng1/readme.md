@@ -14,7 +14,9 @@ $ npm install bower -g
 
 ### Installing
 
-Git Clone this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates).
+Download a [ZIP](https://github.com/kendo-labs/kendo-ui-boilerplates/archive/master.zip) of this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates).
+
+Or, if you have GIT installed you can Git clone this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates).
 
 SSH:
 
@@ -22,13 +24,11 @@ SSH:
 $ git clone git@github.com:kendo-labs/kendo-ui-boilerplates.git
 ```
 
-or, https:
+https:
 
 ```
 $ git clone https://github.com/kendo-labs/kendo-ui-boilerplates.git
 ```
-
-Or, download a [ZIP](https://github.com/kendo-labs/kendo-ui-boilerplates/archive/master.zip) of this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates).
 
 Discard all other boilerplates except the one you want to use.
 
