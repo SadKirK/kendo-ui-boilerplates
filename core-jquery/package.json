@@ -9,6 +9,6 @@
   "author": "Cody Lindley <cody.lindley@telerik.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "browser-sync": "^2.11.1"
+    "browser-sync": "^2.12.3"
   }
 }
