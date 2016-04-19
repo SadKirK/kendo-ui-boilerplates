@@ -2,14 +2,14 @@
 
 A Kendo UI Professional jQuery Angular 1 boilerplate to get you started.
 
-### Prerequisities
+### Prerequisites
 
-Install or Update [Node.js/npm](https://nodejs.org/)
+First, install or update [Node.js & npm](https://nodejs.org/)
 
-Once you have Node.js/npm working open a terminal and install [Bower](http://bower.io/) globally by running:
+Once you have Node.js/npm working open a terminal and install [Bower](http://bower.io/) and [browsersync](https://www.browsersync.io/) globally by running:
 
 ```
-$ npm install bower -g
+$ npm install bower browser-sync -g
 ```
 
 ### Installing
