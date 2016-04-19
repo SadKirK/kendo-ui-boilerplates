@@ -30,7 +30,7 @@ https:
 $ git clone https://github.com/kendo-labs/kendo-ui-boilerplates.git
 ```
 
-Select the boilerplate you want to use and `cd` into that directory.
+Select the boilerplate, from the directory you just downloaded or cloned, and `cd` into that directory from a terminal.
 
 Then run the following commands from the directory of the boilerplate you selected:
 
@@ -38,7 +38,7 @@ Then run the following commands from the directory of the boilerplate you select
 $ npm install
 ```
 
-Then run:
+and:
 
 ```
 $ bower install
@@ -48,7 +48,7 @@ This will install the required [npm](https://www.npmjs.com/) and [Bower](http://
 
 ### Running
 
-Open a terminal from the boilerplate directory.
+Open a terminal from the boilerplate directory. You should have one open at this point.
 
 Run the following [npm scripts](https://docs.npmjs.com/misc/scripts) commands:
 
