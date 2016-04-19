@@ -1,10 +1,10 @@
 {
-  "name": "kendo-ui-core-jquery-boilerplate",
+  "name": "kendo-ui-professional-jquery-boilerplate",
   "version": "1.0.0",
-  "description": "A Kendo UI Core jQuery Boilerplate to get you started",
+  "description": "A Kendo UI Professional jQuery boilerplate to get you started.",
   "main": "index.html",
   "scripts": {
-    "dev-server": "browser-sync --port 4000 start --files 'dev-server/**/*.html,dev-server/**/*.css,dev-server/**/*.js' --server 'dev-server'"
+	  "dev-server": "browser-sync --port 4000 --server \"dev-server\" start --files \"dev-server/**/*.html\" \"dev-server/**/*.css\" \"dev-server/**/*.js\" "
   },
   "author": "Cody Lindley <cody.lindley@telerik.com>",
   "license": "Apache-2.0",
