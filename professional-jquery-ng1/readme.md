@@ -4,9 +4,9 @@ A Kendo UI Professional jQuery Angular 1 boilerplate to get you started.
 
 ### Prerequisites
 
-First, install or update [Node.js & npm](https://nodejs.org/)
+First, install or update [Node.js & npm](https://nodejs.org/).
 
-Once you have Node.js/npm working open a terminal and install [Bower](http://bower.io/) and [browsersync](https://www.browsersync.io/) globally by running:
+Once you have Node.js/npm working open a terminal and install [ower](http://bower.io/) and [browsersync](https://www.browsersync.io/) globally by running:
 
 ```
 $ npm install bower browser-sync -g
@@ -30,9 +30,9 @@ https:
 $ git clone https://github.com/kendo-labs/kendo-ui-boilerplates.git
 ```
 
-Discard all other boilerplates except the one you want to use.
+Select the boilerplate you want to use and `cd` into that directory.
 
-From the boilerplate directory, in your terminal, run the following commands:
+Then run the following commands from the directory of the boilerplate you selected:
 
 ```
 $ npm install
