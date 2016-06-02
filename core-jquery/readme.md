@@ -14,7 +14,7 @@ $ npm install bower browser-sync -g
 
 ### Installing
 
-Download a [ZIP](https://github.com/kendo-labs/kendo-ui-boilerplates/archive/master.zip) of this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates).
+Download a [ZIP](https://github.com/kendo-labs/kendo-ui-boilerplates/archive/master.zip) of this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates) (i.e. kendo-ui-boilerplates).
 
 Or, if you have GIT installed you can Git clone this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates).
 
@@ -30,7 +30,7 @@ https:
 $ git clone https://github.com/kendo-labs/kendo-ui-boilerplates.git
 ```
 
-Select the boilerplate, from the directory you just downloaded or cloned, and `cd` into that directory from a terminal.
+Select the boilerplate you'd like to use from the directory you just downloaded or cloned and `cd` into that directory from a terminal.
 
 Then run the following commands from the directory of the boilerplate you selected:
 
