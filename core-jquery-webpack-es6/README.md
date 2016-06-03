@@ -30,7 +30,7 @@ https:
 $ git clone https://github.com/kendo-labs/kendo-ui-boilerplates.git
 ```
 
-Select the boilerplate you'd like to use from the directory you just downloaded or cloned and `cd` into that directory from a terminal.
+Select the boilerplate you'd like to use from the directory you just downloaded/cloned and `cd` into that directory from a terminal.
 
 Then run the following command from the directory of the boilerplate you selected:
 
