@@ -26,6 +26,6 @@
     },
     "dependencies": {
         "jquery": "2.1.4",
-        "kendo-ui-core": "^2016.2.518"
+		"kendo-ui-core": "^2016.2.603"
     }
 }
