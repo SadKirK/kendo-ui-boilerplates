@@ -2,7 +2,7 @@
 
 A set of Kendo UI boilerplates to get you started with Kendo UI and your style of development.
 
-Select a Boilerplate below and follow the instructions.
+Click on a Boilerplate below and follow the instructions.
 
 Boilerplates: | Description:
 ------------ | -------------
