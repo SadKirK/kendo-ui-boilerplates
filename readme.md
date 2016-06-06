@@ -13,6 +13,8 @@ Boilerplates: | Description:
 [core-jquery-ng1](core-jquery-ng1/) | Uses [Angular 1](http://www.telerik.com/kendo-ui/angularjs-and-kendo-ui-framework-integration) and [Kendo UI Core](https://github.com/telerik/kendo-ui-core) plus jQuery via Bower. Note that [Angular 1 code is included with Kendo UI](http://kendo.cdn.telerik.com/2016.1.226/js/angular.min.js) but you can always [Bower install](https://github.com/angular/bower-angular) your own version.
 [core-jquery-webpack-es6](core-jquery-webpack-es6/) | Uses [Kendo UI Core](https://github.com/telerik/kendo-ui-core) plus jQuery, Webpack, ES6 (i.e. Babel) via npm.
 
+You might also take a look at ["Kendo UI Core NPM Package Usage Example"](https://github.com/telerik/kendo-ui-npm-example) which has some variations ([browserify](http://browserify.org/), [typescript](https://www.typescriptlang.org/) etc...) not found in this repo.
+
 ## License
 
 This project has been released under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)

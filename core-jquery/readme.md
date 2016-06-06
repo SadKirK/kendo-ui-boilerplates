@@ -6,7 +6,7 @@ A Kendo UI Core jQuery boilerplate to get you started.
 
 First, install or update [Node.js & npm](https://nodejs.org/).
 
-Once you have Node.js/npm working open a terminal and install [bower](http://bower.io/) and [browsersync](https://www.browsersync.io/) globally by running:
+Once you have Node.js/npm working open a terminal and install [bower](http://bower.io/) and [browsersync](https://www.browsersync.io/) globally by running (might have to [sudo](https://support.apple.com/en-us/HT202035)):
 
 ```
 $ npm install bower browser-sync -g
