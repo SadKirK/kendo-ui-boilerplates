@@ -1,4 +1,6 @@
-## Transform JSX/ES 2015 during development using Babel-core via Webpack
+# Kendo UI Core React Webpack & ES6 Boilerplate
+
+Uses Kendo UI for React Core via npm plus Webpack and ES6 (i.e. Babel).
 
 This setup involves using webpack and several loaders to transform JSX/ES 2015 to ES5 code. By using webpack JavaScript modules can be loaded using [ES 2015 module format](https://github.com/lukehoban/es6features#modules) (commonJS behind the scenes), properly transformed, then bundled.
 

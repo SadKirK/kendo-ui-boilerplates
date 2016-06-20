@@ -1,6 +1,8 @@
-## Transform JSX/ES 2015 during development using Babel-core via systemJS/jspm.io
+# Kendo UI Core React SystemJS/jspm & ES6 Boilerplate
 
-This React setup involves using [systemJS/jspm-cli](https://github.com/jspm/jspm-cli) to tranform (JSX/ES 2015), load, and bundle JavaScript modules (and CSS) using [ES 2015 module format](https://github.com/lukehoban/es6features#modules). 
+Uses Kendo UI for React Core via npm plus SystemJS/jspm and ES6 (i.e. Babel)
+
+This React setup involves using [systemJS/jspm-cli](https://github.com/jspm/jspm-cli) to tranform (JSX/ES 2015), load, and bundle JavaScript modules (and CSS) using [ES 2015 module format](https://github.com/lukehoban/es6features#modules).
 
 I think we have saved the best for last. Mostly because systemJS/jspm handles the configuration file with a [cli tool](https://github.com/jspm/jspm-cli) and the solution would appear to be the most future proof offering available today.
 
