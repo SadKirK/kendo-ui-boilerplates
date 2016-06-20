@@ -74,8 +74,7 @@ To unbundle simply run:
 > npm run unBundle
 ```
 
-## What follows are detail instructions to setup this boilerplate without downloading anything from Github.
-
+## Instead of downloading anything from Github, optionally, you can setup this boilerplate by following the nine steps below:
 
 ### Step 1: Verify Node.js and npm then install global packages
 
