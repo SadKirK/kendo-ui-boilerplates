@@ -47,7 +47,7 @@ Open a terminal from the boilerplate directory. You should have one open at this
 Run the following [npm scripts](https://docs.npmjs.com/misc/scripts) commands:
 
 ```
-$ npm run wepback
+$ npm run webpack
 ```
 
 Open a new terminal and run:

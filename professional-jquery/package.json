@@ -1,7 +1,5 @@
 {
-  "name": "kendo-ui-professional-jquery-boilerplate",
   "version": "1.0.0",
-  "description": "A Kendo UI Professional jQuery boilerplate to get you started.",
   "main": "index.html",
   "scripts": {
 	  "dev-server": "browser-sync --port 4000 --server \"dev-server\" start --files \"dev-server/**/*.html\" \"dev-server/**/*.css\" \"dev-server/**/*.js\" "

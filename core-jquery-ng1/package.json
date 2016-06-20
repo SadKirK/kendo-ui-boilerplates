@@ -1,7 +1,5 @@
 {
-  "name": "kendo-ui-core-jquery-angular-1-boilerplate",
   "version": "1.0.0",
-  "description": "A Kendo UI Core jQuery Angular 1 boilerplate to get you started.",
   "main": "index.html",
   "scripts": {
 	  "dev-server": "browser-sync --port 4000 --server \"dev-server\" start --files \"dev-server/**/*.html\" \"dev-server/**/*.css\" \"dev-server/**/*.js\" "
