@@ -40,15 +40,9 @@ Then run the following commands from the directory of the boilerplate you select
 $ npm install
 ```
 
-This will install the required [npm](https://www.npmjs.com/).
+This will install the required [npm](https://www.npmjs.com/) packages.
 
 ### Running server
-
-From the root of the boilerplate directory open a command prompt and run the following npm command:
-
-```
-> npm run server
-```
 
 From the root of the boilerplate directory open a command prompt and run the following npm command
 
