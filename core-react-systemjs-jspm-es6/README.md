@@ -2,16 +2,80 @@
 
 Uses Kendo UI for React Core via npm plus SystemJS/jspm and ES6 (i.e. Babel)
 
-This React setup involves using [systemJS/jspm-cli](https://github.com/jspm/jspm-cli) to tranform (JSX/ES 2015), load, and bundle JavaScript modules (and CSS) using [ES 2015 module format](https://github.com/lukehoban/es6features#modules).
+This React setup involves using [systemJS/jspm-cli](https://github.com/jspm/jspm-cli) to transform (JSX/ES 2015), load, and bundle JavaScript modules (and CSS) using [ES 2015 module format](https://github.com/lukehoban/es6features#modules).
 
-I think we have saved the best for last. Mostly because systemJS/jspm handles the configuration file with a [cli tool](https://github.com/jspm/jspm-cli) and the solution would appear to be the most future proof offering available today.
+### Prerequisites
 
-We'll create this setup in nine steps. Or, follow the four steps below which uses this Github repo to speed up this setup.
+First, install or update [Node.js & npm](https://nodejs.org/).
 
-1. [Clone/download](https://github.com/codylindley/simple-react-systemjs-jspm-setup-4-apps) code
-2. Follow step #1
-3. Run `npm install && jspm install` from the cloned directory
-4. Follow step 8.
+Once you have Node.js/npm working open a terminal and install [jspm](http://jspm.io/) and [browsersync](https://www.browsersync.io/) globally by running (might have to [sudo](https://support.apple.com/en-us/HT202035)):
+
+```
+$ npm install jspm browser-sync -g
+```
+
+### Installing
+
+Download a [ZIP](https://github.com/kendo-labs/kendo-ui-boilerplates/archive/master.zip) of this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates) (i.e. kendo-ui-boilerplates).
+
+Or, if you have GIT installed you can Git clone this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates).
+
+SSH:
+
+```
+$ git clone git@github.com:kendo-labs/kendo-ui-boilerplates.git
+```
+
+https:
+
+```
+$ git clone https://github.com/kendo-labs/kendo-ui-boilerplates.git
+```
+
+Select the boilerplate you'd like to use from the directory you just downloaded/cloned and `cd` into that directory from a terminal.
+
+Then run the following commands from the directory of the boilerplate you selected:
+
+```
+$ npm install
+```
+
+and:
+
+```
+$ jspm install
+```
+
+This will install the required [npm](https://www.npmjs.com/) and [jspm](http://jspm.io/) packages.
+
+### Running server
+
+From the root of the setup directory open a command prompt and run the following npm command:
+
+```
+> npm run server
+```
+
+The `index.html` file is will be served at [http://localhost:4000](http://localhost:4000). Browser Sync has been configured to re-run when changes are made.
+
+## Bundle mode
+
+SystemJS/jspm offers a bundled mode. From the root of the setup directory open a command prompt and run the following npm command:
+
+```
+> npm run bundle
+```
+
+By running this command the browser should reload and be running from a `build.js` file that has been created for you in the root of the setup directory. Additionally, the bundling process will combine and in-line into the HTML document any CSS that was imported in a module (e.g. `app.css`)
+
+To unbundle simply run:
+
+```
+> npm run unBundle
+```
+
+## What follows are detail instructions to setup this boilerplate without downloading anything from Github.
+
 
 ### Step 1: Verify Node.js and npm then install global packages
 

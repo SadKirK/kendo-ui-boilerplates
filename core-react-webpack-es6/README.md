@@ -4,12 +4,69 @@ Uses Kendo UI for React Core via npm plus Webpack and ES6 (i.e. Babel).
 
 This setup involves using webpack and several loaders to transform JSX/ES 2015 to ES5 code. By using webpack JavaScript modules can be loaded using [ES 2015 module format](https://github.com/lukehoban/es6features#modules) (commonJS behind the scenes), properly transformed, then bundled.
 
-We'll create this setup in seven steps. Or, follow the four steps below which uses a Github repo to speed up this setup.
+### Prerequisites
 
-1. [Clone/download](https://github.com/codylindley/simple-react-webpack-setup-4-apps) code
-2. Follow step 1
-3. Run npm install from the cloned directory
-4. Follow last step
+First, install or update [Node.js & npm](https://nodejs.org/).
+
+Once you have Node.js/npm working open a terminal and install [webpack](https://www.npmjs.com/package/webpack) and [browsersync](https://www.browsersync.io/) globally by running (might have to [sudo](https://support.apple.com/en-us/HT202035)):
+
+```
+$ npm install webpack browser-sync -g
+```
+
+### Installing
+
+Download a [ZIP](https://github.com/kendo-labs/kendo-ui-boilerplates/archive/master.zip) of this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates) (i.e. kendo-ui-boilerplates).
+
+Or, if you have GIT installed you can Git clone this [repository](https://github.com/kendo-labs/kendo-ui-boilerplates).
+
+SSH:
+
+```
+$ git clone git@github.com:kendo-labs/kendo-ui-boilerplates.git
+```
+
+https:
+
+```
+$ git clone https://github.com/kendo-labs/kendo-ui-boilerplates.git
+```
+
+Select the boilerplate you'd like to use from the directory you just downloaded/cloned and `cd` into that directory from a terminal.
+
+Then run the following commands from the directory of the boilerplate you selected:
+
+```
+$ npm install
+```
+
+This will install the required [npm](https://www.npmjs.com/).
+
+### Running server
+
+From the root of the boilerplate directory open a command prompt and run the following npm command:
+
+```
+> npm run server
+```
+
+From the root of the boilerplate directory open a command prompt and run the following npm command
+
+```
+> npm run webpack
+```
+
+Next, open another new command prompt and run the following npm command
+
+```
+> npm run server
+```
+
+Both of these commands will continue to run while developing.
+
+Browser Sync should have open a browser running the `index.html` file and `app.js` file at [http://localhost:4000](http://localhost:4000). Both webpack and Browser Sync have been configured to re-run when changes are made.
+
+## What follows are detail instructions to setup this boilerplate without downloading anything from Github.
 
 ### Step 1: Verify Node.js and npm then install global packages
 
