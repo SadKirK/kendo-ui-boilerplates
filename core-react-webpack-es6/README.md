@@ -60,7 +60,7 @@ Both of these commands will continue to run while developing.
 
 Browser Sync should have open a browser running the `index.html` file and `app.js` file at [http://localhost:4000](http://localhost:4000). Both webpack and Browser Sync have been configured to re-run when changes are made.
 
-## Below are seven detailed steps to setup this boilerplate without downloading anything from Github.
+## Instead of downloading anything from Github, optionally, you can setup this boilerplate by following the seven steps below:
 
 ### Step 1: Verify Node.js and npm then install global packages
 
