@@ -14,11 +14,11 @@ $ npm install bower browser-sync -g
 
 Next, you'll have setup a `.netrc` file on your local system.
 
-On Windows:
+***On Windows:***
 
-Step 1 Create a text file called \_netrc in your home directory (e.g. `c:\users\jane\_netrc`).
+Create a text file called \_netrc in your home directory (e.g. `c:\users\jane\_netrc`).
 
-Step 2 Declare a HOME environment variable.
+Next, Declare a HOME environment variable.
 
 EXAMPLE
 
@@ -30,7 +30,7 @@ Add the credentials using the format in the example above.
 
 Git might have problems resolving your home directory if it contains spaces in its path—for example, c:\Documents and Settings\jane). Therefore, update your %HOME% environment variable to point to a directory having no spaces in its name.
 
-On Mac:
+***On Mac:***
 
 Create a file called .netrc in your home directory (~/.netrc). Make sure you modify the file permissions to make it readable only to you.
 
