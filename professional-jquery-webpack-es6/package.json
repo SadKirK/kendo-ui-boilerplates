@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "jquery": "2.1.4",
-    "kendo": "git+https://bower.telerik.com/npm-kendo-ui.git"
+    "kendo": "git+https://bower.telerik.com/npm-kendo-ui.git#2016.2.607"
   }
 }

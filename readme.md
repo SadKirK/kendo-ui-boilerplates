@@ -16,8 +16,7 @@ jQuery                | [professional-jquery-webpack-es6](professional-jquery-we
 jQuery                | [core-jquery-systemjs-jspm-es6](core-jquery-systemjs-jspm-es6/) | Uses [Kendo UI Core](https://github.com/telerik/kendo-ui-core) via npm plus jQuery, SystemJS/jspm, and ES6 (i.e. Babel)
 React                 | [core-react-webpack-es6](core-react-webpack-es6/) | Uses [Kendo UI for React Core](https://github.com/telerik/kendo-ui-core) via npm plus Webpack and ES6 (i.e. Babel).
 React                 | [core-react-systemjs-jspm-es6](core-react-systemjs-jspm-es6/) | Uses [Kendo UI for React Core](https://github.com/telerik?utf8=%E2%9C%93&query=react) via npm plus SystemJS/jspm and ES6 (i.e. Babel)
-
-
+React                 | core-react-babel COMING SOON | Uses [Kendo UI for React Core](https://github.com/telerik?utf8=%E2%9C%93&query=react) via npm plus Babel (i.e. ES6)
 
 You might also take a look at ["Kendo UI Core NPM Package Usage Example"](https://github.com/telerik/kendo-ui-npm-example) which has some variations ([browserify](http://browserify.org/), [typescript](https://www.typescriptlang.org/) etc...) not found in this repo.
 
