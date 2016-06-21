@@ -6,10 +6,10 @@ A Kendo UI Professional jQuery Webpack & ES6 boilerplate to get you started.
 
 First, install or update [Node.js & npm](https://nodejs.org/).
 
-Once you have Node.js/npm working open a terminal and install [browsersync](https://www.browsersync.io/) globally by running (might have to [sudo](https://support.apple.com/en-us/HT202035)):
+Once you have Node.js/npm working open a terminal and install [webpack](https://www.npmjs.com/package/webpack) and [browsersync](https://www.browsersync.io/) globally by running (might have to [sudo](https://support.apple.com/en-us/HT202035)):
 
 ```
-$ npm install bower browser-sync -g
+$ npm install webpack browser-sync -g
 ```
 
 Next, you'll need to setup a `.netrc` file on your local system. This file contains the login (username & password) of the account on telerik.com in which you purchased [Kendo UI professional](http://www.telerik.com/kendo-ui) or [DevCraft](http://www.telerik.com/devcraft). Below are the instructions for both Windows and Mac users.
