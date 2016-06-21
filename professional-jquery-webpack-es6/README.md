@@ -1,6 +1,6 @@
-# Kendo UI Core jQuery Webpack & ES6 Boilerplate
+# Kendo UI Professional jQuery Webpack & ES6 Boilerplate
 
-A Kendo UI Core jQuery Webpack & ES6 boilerplate to get you started.
+A Kendo UI Professional jQuery Webpack & ES6 boilerplate to get you started.
 
 ### Prerequisites
 
