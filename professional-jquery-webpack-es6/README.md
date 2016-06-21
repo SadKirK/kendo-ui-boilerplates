@@ -12,11 +12,11 @@ Once you have Node.js/npm working open a terminal and install [browsersync](http
 $ npm install bower browser-sync -g
 ```
 
-Next, you'll have setup a `.netrc` file on your local system.
+Next, you'll need to setup a `.netrc` file on your local system. This file contains the login (username & password) of the account on telerik.com in which you purchased [Kendo UI professional](http://www.telerik.com/kendo-ui) or [DevCraft](http://www.telerik.com/devcraft). Below are the instructions for both Windows and Mac users.
 
 ***On Windows:***
 
-Create a text file called \_netrc in your home directory (e.g. `c:\users\jane\_netrc`).
+Create a text file called `\_netrc` in your home directory (e.g. `c:\users\jane\_netrc`).
 
 Next, Declare a HOME environment variable.
 
@@ -28,20 +28,20 @@ C:\> SETX HOME %USERPROFILE%
 
 Add the credentials using the format in the example above.
 
-Git might have problems resolving your home directory if it contains spaces in its path—for example, c:\Documents and Settings\jane). Therefore, update your %HOME% environment variable to point to a directory having no spaces in its name.
+Git might have problems resolving your home directory if it contains spaces in its path—for example, `c:\Documents and Settings\jane`). Therefore, update your %HOME% environment variable to point to a directory having no spaces in its name.
 
 ***On Mac:***
 
-Create a file called .netrc in your home directory (~/.netrc). Make sure you modify the file permissions to make it readable only to you.
+Create a file called `.netrc` in your home directory (`~/.netrc`). Make sure you modify the file permissions to make it readable only to you.
 
-Add your credentials to the ~/.netrc file using the format from the example below.
+Add your credentials to the `~/.netrc` file using the format from the example below.
 
 EXAMPLE:
 
 ```
 machine bower.telerik.com
-    login my-telerik.identity@example.com
-    password mysecret
+    login my-telerik.identity@example.com-here
+    password my-password-here
 ```
 
 ### Installing
