@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "webpack": "webpack --watch",
+    "webpack": "webpack --watch --display-modules",
     "server": "browser-sync --port 4000 start --server --files \"**/*.html\" \"build/**/*.css\" \"build/**/*.js\" "
   },
   "devDependencies": {

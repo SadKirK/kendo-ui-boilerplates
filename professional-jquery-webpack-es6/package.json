@@ -4,7 +4,7 @@
   "author": "Cody Lindley <cody.lindley@telerik.com>",
   "license": "Apache-2.0",
   "scripts": {
-    "webpack": "webpack --watch",
+    "webpack": "webpack --watch --display-modules",
     "server": "browser-sync --port 4000 start --server --files \"**/*.html\" \"build/**/*.css\" \"build/**/*.js\" "
   },
   "devDependencies": {
