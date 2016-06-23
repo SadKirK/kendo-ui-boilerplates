@@ -46,6 +46,11 @@ ReactDOM.render(
 		<KendoReactButtons.Button togglable>Togglable button</KendoReactButtons.Button>
 		<p>onClick event handler</p>
 		<ButtonContainer />
+			<KendoReactButtons.ButtonGroup>
+	            <KendoReactButtons.Button>Button 1</KendoReactButtons.Button>
+	            <KendoReactButtons.Button>Button 2</KendoReactButtons.Button>
+	            <KendoReactButtons.Button>Button 3</KendoReactButtons.Button>
+	        </KendoReactButtons.ButtonGroup>
 	</div>,
 	document.getElementById('app')
 );
