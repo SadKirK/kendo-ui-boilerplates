@@ -1,8 +1,8 @@
-# Kendo UI Boilerplates (aka developer skeletons)
+# Kendo UI Boilerplates (aka development skeletons)
 
 A set of Kendo UI boilerplates to get you started with Kendo UI and your style of development.
 
-What is a boilerplate (aka developer skeleton)? It is a mildly opinionated basic setup (i.e. all the code and minimal tools you need already setup and working) to get you writing code fast without having to sort out the details yourself. Note that these boilerplates are not application seeds. They are intended to get you going, but where you go is still wide open.
+What is a boilerplate (aka development skeleton)? It is a mildly opinionated basic setup (i.e. all the code and minimal tools you need already setup and working) to get you writing code fast without having to sort out the details yourself. Note that these boilerplates are not application seeds. They are intended to get you going, but where you go is still wide open.
 
 Each of the boilerplates below will get you going with Kendo UI development by leveraging Node.js, npm and/or bower, & [browsersync](https://www.browsersync.io/). Most boilerplates only require running a couple of npm commands to use.
 
