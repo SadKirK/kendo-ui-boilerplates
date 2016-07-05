@@ -1,4 +1,5 @@
-# Kendo UI Boilerplates (aka development skeletons)
+# Kendo UI Boilerplates
+##### (aka development skeletons)
 
 A set of Kendo UI boilerplates to get you started with Kendo UI and your style of development.
 
