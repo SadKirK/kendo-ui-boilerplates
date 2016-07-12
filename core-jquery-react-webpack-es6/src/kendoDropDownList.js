@@ -23,9 +23,15 @@ const KendoDropDownList = React.createClass({
 		this.span = widgetInstance.span;
 
 		//if props are avaliable for events, unbind events, or methods make it happen
-		this.props.kendoEvents ? this.bindEventsToKendoWidget(this.props.kendoEvents) : null;
 		this.props.kendoUnbindEvents ? this.unbindEventsToKendoWidget(this.props.kendoUnbindEvents) : null;
+		this.props.kendoEvents ? this.bindEventsToKendoWidget(this.props.kendoEvents) : null;
 		this.props.kendoMethods ? this.callKendoWidgetMethods(this.props.kendoMethods) : null;
+		this.props.kendoTriggerEvents ? this.triggerKendoWidgetEvents(this.props.kendoTriggerEvents) : null;
+	},
+	triggerKendoWidgetEvents:function(events){
+		Object.keys(events).forEach(function(event){
+			this.widgetInstance.trigger(event);
+		}, this);
 	},
 	bindEventsToKendoWidget:function(events){
 		Object.keys(events).forEach(function(event){
@@ -39,7 +45,7 @@ const KendoDropDownList = React.createClass({
 	},
 	callKendoWidgetMethods:function(methods){
 		Object.keys(methods).forEach(function(method){
-		    this.widgetInstance[method](methods[method]?methods[method]:null)
+		    this.widgetInstance[method](...methods[method])
 		}, this);
 	},
 	componentWillReceiveProps: function(newProps) {

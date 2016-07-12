@@ -31,15 +31,15 @@ var App = React.createClass({
     }.bind(this), 1000);
 
 	setTimeout(function(){ clearInterval(foo); }, 1000);
-
   },
 
   render: function() {
 	  return (
   		<div>
-  			<KendoDropDownList kendoOptions={{dataSource:data, dataTextField: "text", dataValueField: "value"}} kendoMethods={{toggle:[]}} kendoEvents={{open:function(){console.log('open')}}} kendoUnbindEvents={{}}><input className="kendoDropDownList" /></KendoDropDownList>
-			{this.state.now}
-  			<KendoDropDownList>
+  			<KendoDropDownList kendoOptions={{dataSource:data, dataTextField: "text", dataValueField: "value"}} kendoMethods={{toggle:[], value:['3']}} kendoEvents={{open:function(){console.log('open')}}} kendoUnbindEvents={{}} kendoTriggerEvents={{}}><input className="kendoDropDownList" /></KendoDropDownList>
+
+		
+			<KendoDropDownList>
   				<select>
   	                <option>S - 6 3/4"</option>
   	                <option>M - 7 1/4"</option>
