@@ -14,7 +14,7 @@ const KendoDropDownList = React.createClass({
 		this.$elementNode = $elementNode = $(elementNode);
 
 		//instantiate the Kendo UI widget from props or one prop called kendoOptions
-		$elementNode.kendoDropDownList(this.props.kendoOptions?this.props.kendoOptions:this.props);
+		$elementNode.kendoDropDownList(this.props.kendoOptions);
 
 		//saved instance reference now that it is created
 		this.widgetInstance = widgetInstance = $elementNode.getKendoDropDownList();
@@ -22,11 +22,9 @@ const KendoDropDownList = React.createClass({
 		//setup static references (i.e. fields) on Widget
 		this.span = widgetInstance.span;
 		console.log($elementNode.getKendoDropDownList());
-
-		//setup static references (i.e. fields) on Widget
 	},
 	componentWillReceiveProps: function(newProps) {
-	    console.log(2);
+	    console.log(newProps);
   	},
 	shouldComponentUpdate: function(){
 		return false;
