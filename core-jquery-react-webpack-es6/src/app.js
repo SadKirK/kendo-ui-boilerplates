@@ -36,9 +36,29 @@ var App = React.createClass({
   render: function() {
 	  return (
   		<div>
-  			<KendoDropDownList kendoOptions={{dataSource:data, dataTextField: "text", dataValueField: "value"}} kendoMethods={{toggle:[], value:['3']}} kendoEvents={{open:function(){console.log('open')}}} kendoUnbindEvents={{}} kendoTriggerEvents={{}}><input className="kendoDropDownList" /></KendoDropDownList>
+  			<KendoDropDownList
+				kendoOptions={{
+					dataSource:data,
+					dataTextField: "text",
+					dataValueField: "value"
+				}}
+				kendoMethods={{
+					toggle:[],
+					value:['3']
+				}}
+				kendoEvents={{
+					open:function(){console.log('open')}
+				}}
+				kendoUnbindEvents={{
 
-		
+				}}
+				kendoTriggerEvents={{
+					
+				}}>
+					<input className="kendoDropDownList" />
+				</KendoDropDownList>
+
+
 			<KendoDropDownList>
   				<select>
   	                <option>S - 6 3/4"</option>
