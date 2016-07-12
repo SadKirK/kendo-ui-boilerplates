@@ -46,6 +46,7 @@ const KendoDropDownList = React.createClass({
 		}, this);
 	},
 	componentWillReceiveProps: function(newProps){
+		//TODO!!!!!!!
 		//check for changes, then get changes and call bind()/unbind(), trigger(), or method
 	    console.log(newProps);
   	},
