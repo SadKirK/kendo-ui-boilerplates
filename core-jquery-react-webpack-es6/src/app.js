@@ -18,12 +18,12 @@ var data = [{
 }];
 
 //Kendo UI for jQuery Component
-import KendoDropDownList from './k-ui-dropdown.js';
+import KendoDropDownList from './kendoDropDownList.js';
 
 var App = function(){
     return (
 		<div>
-			<KendoDropDownList KendoOptions={{dataSource:data, dataTextField: "text", dataValueField: "value"}}><input className="kendoDropDownList" /></KendoDropDownList>
+			<KendoDropDownList kendoOptions={{dataSource:data, dataTextField: "text", dataValueField: "value"}}><input className="kendoDropDownList" /></KendoDropDownList>
 
 			<KendoDropDownList>
 				<select>
@@ -34,7 +34,7 @@ var App = function(){
 		        </select>
 			</KendoDropDownList>
 
-			<KendoDropDownList KendoOptions={{dataSource:data, dataTextField: "text", dataValueField: "value"}} />
+			<KendoDropDownList dataSource={data} dataTextField="text" dataValueField="value" />
 		</div>
 	);
 }
