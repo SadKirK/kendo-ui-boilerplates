@@ -57,17 +57,17 @@ var App = React.createClass({
 					"open",
 				]}>
 					<input className="kendoDropDownList" />
-				</KendoDropDownList>
+			</KendoDropDownList>
 
 
 			<KendoDropDownList>
-  				<select>
-  	                <option>S - 6 3/4"</option>
-  	                <option>M - 7 1/4"</option>
-  	                <option>L - 7 1/8"</option>
-  	                <option>XL - 7 5/8"</option>
-  		        </select>
-  			</KendoDropDownList>
+				<select>
+					<option>S - 6 3/4"</option>
+					<option>M - 7 1/4"</option>
+					<option>L - 7 1/8"</option>
+					<option>XL - 7 5/8"</option>
+				</select>
+			</KendoDropDownList>
   		</div>
   	);
   }

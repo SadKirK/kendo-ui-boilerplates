@@ -19,7 +19,7 @@ const KendoDropDownList = React.createClass({
 		//saved instance reference now that it is created
 		this.widgetInstance = widgetInstance = $elementNode.getKendoDropDownList();
 
-		//if props are avaliable for events, unbind events, or methods make it happen
+		//if props are avaliable for events, triggers, unbind events, or methods make it happen
 		this.props.kendoEvents ? this.bindEventsToKendoWidget(this.props.kendoEvents) : null;
 		this.props.kendoMethods ? this.callKendoWidgetMethods(this.props.kendoMethods) : null;
 		this.props.kendoTriggerEvents ? this.triggerKendoWidgetEvents(this.props.kendoTriggerEvents) : null;
@@ -45,7 +45,8 @@ const KendoDropDownList = React.createClass({
 		    this.widgetInstance[method](...methods[method])
 		}, this);
 	},
-	componentWillReceiveProps: function(newProps) {
+	componentWillReceiveProps: function(newProps){
+		//check for changes, then get changes and call bind()/unbind(), trigger(), or method
 	    console.log(newProps);
   	},
 	shouldComponentUpdate: function(){
