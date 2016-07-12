@@ -21,7 +21,26 @@ const KendoDropDownList = React.createClass({
 
 		//setup static references (i.e. fields) on Widget
 		this.span = widgetInstance.span;
-		console.log($elementNode.getKendoDropDownList());
+
+		//if props are avaliable for events, unbind events, or methods make it happen
+		this.props.kendoEvents ? this.bindEventsToKendoWidget(this.props.kendoEvents) : null;
+		this.props.kendoUnbindEvents ? this.unbindEventsToKendoWidget(this.props.kendoUnbindEvents) : null;
+		this.props.kendoMethods ? this.callKendoWidgetMethods(this.props.kendoMethods) : null;
+	},
+	bindEventsToKendoWidget:function(events){
+		Object.keys(events).forEach(function(event){
+			this.widgetInstance.bind(event,events[event]);
+		}, this);
+	},
+	unbindEventsToKendoWidget:function(events){
+		Object.keys(events).forEach(function(event){
+			this.widgetInstance.unbind(event);
+		}, this);
+	},
+	callKendoWidgetMethods:function(methods){
+		Object.keys(methods).forEach(function(method){
+		    this.widgetInstance[method](methods[method]?methods[method]:null)
+		}, this);
 	},
 	componentWillReceiveProps: function(newProps) {
 	    console.log(newProps);
