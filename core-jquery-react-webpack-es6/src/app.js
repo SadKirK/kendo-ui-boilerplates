@@ -37,28 +37,27 @@ var App = React.createClass({
 	  return (
   		<div>
   			<KendoDropDownList
-				kendoOptions={{ //nothing new here, object of configuration options
+				options={{ //nothing new here, object of configuration options
 					dataSource:data,
 					dataTextField: "text",
 					dataValueField: "value"
 				}}
-				kendoMethods={{ //name of method and array of arguments to pass to method
+				methods={{ //name of method and array of arguments to pass to method
 					toggle:[], //send empty array if no arguments
 					value:['3']
 				}}
-				kendoEvents={{ //name of event, and callback
+				events={{ //name of event, and callback
 					close:function(){console.log('dropdown closed')},
 					select:function(){console.log('item selected')}
 				}}
-				kendoUnbindEvents={[ //name of event to unbind, string
+				unbindEvents={[ //name of event to unbind, string
 					"select"
 				]}
-				kendoTriggerEvents={[ //name of event to trigger, string
+				triggerEvents={[ //name of event to trigger, string
 					"open",
 				]}>
 					<input className="kendoDropDownList" />
 			</KendoDropDownList>
-
 
 			<KendoDropDownList>
 				<select>

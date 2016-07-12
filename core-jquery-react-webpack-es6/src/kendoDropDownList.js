@@ -13,17 +13,17 @@ const KendoDropDownList = React.createClass({
 		this.elementNode = elementNode = ReactDOM.findDOMNode(this);
 		this.$elementNode = $elementNode = $(elementNode);
 
-		//instantiate the Kendo UI widget from props or one prop called kendoOptions
-		$elementNode.kendoDropDownList(this.props.kendoOptions);
+		//instantiate the Kendo UI widget from props or one prop called options
+		$elementNode.kendoDropDownList(this.props.options);
 
 		//saved instance reference now that it is created
 		this.widgetInstance = widgetInstance = $elementNode.getKendoDropDownList();
 
 		//if props are avaliable for events, triggers, unbind events, or methods make it happen
-		this.props.kendoEvents ? this.bindEventsToKendoWidget(this.props.kendoEvents) : null;
-		this.props.kendoMethods ? this.callKendoWidgetMethods(this.props.kendoMethods) : null;
-		this.props.kendoTriggerEvents ? this.triggerKendoWidgetEvents(this.props.kendoTriggerEvents) : null;
-		this.props.kendoUnbindEvents ? this.unbindEventsToKendoWidget(this.props.kendoUnbindEvents) : null;
+		this.props.events ? this.bindEventsToKendoWidget(this.props.events) : null;
+		this.props.methods ? this.callKendoWidgetMethods(this.props.methods) : null;
+		this.props.triggerEvents ? this.triggerKendoWidgetEvents(this.props.triggerEvents) : null;
+		this.props.unbindEvents ? this.unbindEventsToKendoWidget(this.props.unbindEvents) : null;
 	},
 	triggerKendoWidgetEvents:function(events){
 		events.forEach(function(event){
