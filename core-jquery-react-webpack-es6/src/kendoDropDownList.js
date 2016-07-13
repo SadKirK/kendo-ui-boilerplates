@@ -2,6 +2,7 @@ import $ from 'jquery';
 import kuidropdown from 'kendo-ui-core/js/kendo.dropdownlist.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import deepDiff from 'deep-diff';
 
 const KendoDropDownList = React.createClass({
 	componentDidMount: function() {
@@ -45,10 +46,22 @@ const KendoDropDownList = React.createClass({
 		    this.widgetInstance[method](...methods[method])
 		}, this);
 	},
-	componentWillReceiveProps: function(newProps){
-		//TODO!!!!!!!
-		//check for changes, then get changes and call bind()/unbind(), trigger(), or method
-	    console.log(newProps);
+	componentWillReceiveProps: function(nextProps){
+		if(this.widgetInstance.setOptions){
+			this.widgetInstance.setOptions(nextProps.options);
+		}
+
+		if(deepDiff(nextProps.methods,this.props.methods)){
+			this.callKendoWidgetMethods(nextProps.methods);
+		}
+
+		if(deepDiff(nextProps.unbindEvents,this.props.unbindEvents)){
+			this.unbindEventsToKendoWidget(nextProps.unbindEvents);
+		}
+
+		if(deepDiff(nextProps.triggerEvents,this.props.triggerEvents)){
+			this.triggerKendoWidgetEvents(nextProps.triggerEvents);
+		}
   	},
 	shouldComponentUpdate: function(){
 		return false;
