@@ -48,22 +48,32 @@ const KendoDropDownList = React.createClass({
 	},
 	componentWillReceiveProps: function(nextProps){
 		//have too, because these are functions, for now, thinking about stringing them and comparing
-		this.bindEventsToKendoWidget(nextProps.events);
+		if(nextProps.events){
+			this.bindEventsToKendoWidget(nextProps.events);
+		}
 
 		if(this.widgetInstance.setOptions){
-			this.widgetInstance.setOptions(nextProps.options);
+			if(nextProps.options){
+				this.widgetInstance.setOptions(nextProps.options);
+			}
 		}
 
-		if(deepDiff(nextProps.methods,this.props.methods)){
-			this.callKendoWidgetMethods(nextProps.methods);
+		if(nextProps.methods){
+			if(deepDiff(nextProps.methods,this.props.methods)){
+				this.callKendoWidgetMethods(nextProps.methods);
+			}
 		}
 
-		if(deepDiff(nextProps.unbindEvents,this.props.unbindEvents)){
-			this.unbindEventsToKendoWidget(nextProps.unbindEvents);
+		if(nextProps.unbindEvents){
+			if(deepDiff(nextProps.unbindEvents,this.props.unbindEvents)){
+				this.unbindEventsToKendoWidget(nextProps.unbindEvents);
+			}
 		}
 
-		if(deepDiff(nextProps.triggerEvents,this.props.triggerEvents)){
-			this.triggerKendoWidgetEvents(nextProps.triggerEvents);
+		if(nextProps.triggerEvents){
+			if(deepDiff(nextProps.triggerEvents,this.props.triggerEvents)){
+				this.triggerKendoWidgetEvents(nextProps.triggerEvents);
+			}
 		}
   	},
 	shouldComponentUpdate: function(){
