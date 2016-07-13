@@ -47,6 +47,9 @@ const KendoDropDownList = React.createClass({
 		}, this);
 	},
 	componentWillReceiveProps: function(nextProps){
+		//have too, because these are functions, for now, thinking about stringing them and comparing
+		this.bindEventsToKendoWidget(nextProps.events);
+
 		if(this.widgetInstance.setOptions){
 			this.widgetInstance.setOptions(nextProps.options);
 		}
