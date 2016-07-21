@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import deepDiff from 'deep-diff';
 
 const KendoDropDownList = React.createClass({
-	componentDidMount: function() {
+	componentDidMount: function() {//comonent is in the DOM, so do stuff to it
 		//store reference to:
 		//1. element node widget is invoked on
 		//2. element node widget, wrapped with jQuery
@@ -46,6 +46,7 @@ const KendoDropDownList = React.createClass({
 		    this.widgetInstance[method](...methods[method])
 		}, this);
 	},
+	//not called on inital render, but whenever parent state changes this is called
 	componentWillReceiveProps: function(nextProps){
 		//have too, because these are functions, for now, thinking about stringing them and comparing
 		if(nextProps.events){
@@ -77,6 +78,9 @@ const KendoDropDownList = React.createClass({
 		}
   	},
 	shouldComponentUpdate: function(){
+		//doing this so Kendo UI widget is only ever create once
+		//then, when a component above this one renders, it will send new props
+		//that will update the kendo ui widget
 		return false;
 	},
 	componentWillUnmount: function() {

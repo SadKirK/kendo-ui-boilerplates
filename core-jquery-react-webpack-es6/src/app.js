@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+//Kendo UI for jQuery Component
+import KendoDropDownList from './kendoDropDownList.js';
+
 //CSS
 import 'kendo-ui-core/css/web/kendo.common.core.min.css';
 import 'kendo-ui-core/css/web/kendo.default.min.css';
 import './app.css';
 
+//Static Data
 var data = [{
 	text: "Item1",
 	value: "1"
@@ -17,10 +21,7 @@ var data = [{
 	value: "3"
 }];
 
-var boo = '3';
-
-//Kendo UI for jQuery Component
-import KendoDropDownList from './kendoDropDownList.js';
+var fakeApropChange = '3';
 
 var App = React.createClass({
   getInitialState: function() {
@@ -28,12 +29,13 @@ var App = React.createClass({
   },
 
   componentDidMount: function() {
-    var foo = setInterval(function() {
-			  boo = '2';
-      this.setState({now: Date.now()});
-  }.bind(this), 5000);
+	//demonstrate that state changes from above, means props can change and prop changes change widget
+	var changeStateInterval = setInterval(function() {
+		fakeApropChange = '2';
+		this.setState({now: Date.now()});
+	}.bind(this), 4000);
 
-	setTimeout(function(){ clearInterval(foo); }, 5000);
+	setTimeout(function(){ clearInterval(changeStateInterval); }, 5000);
   },
 
   render: function() {
@@ -41,6 +43,7 @@ var App = React.createClass({
   		<div>
   			<KendoDropDownList
 				//only updates upon state change from above if widget supports setOptions()
+				//don't define events here, do it in events prop
 				options={{ //nothing new here, object of configuration options
 					dataSource:data,
 					dataTextField: "text",
@@ -49,7 +52,7 @@ var App = React.createClass({
 				//updates if object is different from initial mount
 				methods={{ //name of method and array of arguments to pass to method
 					open:[], //send empty array if no arguments
-					value:[boo]
+					value:[fakeApropChange]
 				}}
 				//Right now, always updates
 				events={{ //name of event, and callback
@@ -57,20 +60,20 @@ var App = React.createClass({
 					select:function(){console.log('item selected')},
 					open:function(){console.log('dropdown opened')}
 				}}
-				//updates if object is different from initial mount
+				//updates if array is different from initial mount
 				unbindEvents={[ //name of event to unbind, string
 					"select"
 				]}
-				//updates if object is different from initial mount
+				//updates if array is different from initial mount
 				triggerEvents={[ //name of event to trigger, string
 					"open",
 				]}>
 					<input className="kendoDropDownList" />
 			</KendoDropDownList>
-
+			&nbsp;&nbsp;&nbsp;
 			<KendoDropDownList>
 				<select>
-					<option>S - 6 3/4"</option>
+					<option>S - 6 3/5"</option>
 					<option>M - 7 1/4"</option>
 					<option>L - 7 1/8"</option>
 					<option>XL - 7 5/8"</option>
