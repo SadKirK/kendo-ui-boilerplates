@@ -16,13 +16,14 @@ Kendo UI For:         | Boilerplate Name:           | Description:
 jQuery                | [core-jquery](core-jquery/) | Uses [Kendo UI Core](https://github.com/telerik/kendo-ui-core) for jQuery from Bower.
 jQuery                | [professional-jquery](professional-jquery/)  |  Uses Kendo UI Professional for jQuery from Bower.
 jQuery (with Angular 1)    | [professional-jquery-ng1](professional-jquery-ng1/) | Uses [Angular 1](http://www.telerik.com/kendo-ui/angularjs-and-kendo-ui-framework-integration) and Kendo UI Professional for jQuery from Bower. Note that [Angular 1 code is included with Kendo UI](http://kendo.cdn.telerik.com/2016.1.226/js/angular.min.js) but you can always [Bower install](https://github.com/angular/bower-angular) your own version.
-jQuery                | [core-mobile-jquery](core-mobile-jquery/) | Uses Kendo [Mobile/Hybrid Widgets](http://demos.telerik.com/kendo-ui/m/index) for jQuery from Bower.
 jQuery (with Angular 1)    | [core-jquery-ng1](core-jquery-ng1/) | Uses [Angular 1](http://www.telerik.com/kendo-ui/angularjs-and-kendo-ui-framework-integration) and [Kendo UI Core](https://github.com/telerik/kendo-ui-core) for jQuery from Bower. Note that [Angular 1 code is included with Kendo UI](http://kendo.cdn.telerik.com/2016.1.226/js/angular.min.js) but you can always [Bower install](https://github.com/angular/bower-angular) your own version.
+jQuery                | [core-mobile-jquery](core-mobile-jquery/) | Uses Kendo [Mobile/Hybrid Widgets](http://demos.telerik.com/kendo-ui/m/index) for jQuery from Bower.
 jQuery                | [core-jquery-webpack-es6](core-jquery-webpack-es6/) | Uses [Kendo UI Core](https://github.com/telerik/kendo-ui-core) for jQuery, Webpack, and ES6 (i.e. Babel) from npm.
 jQuery                | [professional-jquery-webpack-es6](professional-jquery-webpack-es6/) | Uses [Kendo UI Professional](http://www.telerik.com/kendo-ui) for jQuery, Webpack, and ES6 (i.e. Babel) from a private Git repo hosted by Telerik.
 jQuery                | [core-jquery-systemjs-jspm-es6](core-jquery-systemjs-jspm-es6/) | Uses [Kendo UI Core](https://github.com/telerik/kendo-ui-core) for jQuery, SystemJS/jspm, and ES6 (i.e. Babel) from npm.
 React                 | [core-react-webpack-es6](core-react-webpack-es6/) | Uses [Kendo UI for React Core](https://github.com/telerik/kendo-ui-core), Webpack, and ES6 (i.e. Babel) from npm.
 React                 | [core-react-systemjs-jspm-es6](core-react-systemjs-jspm-es6/) | Uses [Kendo UI for React Core](https://github.com/telerik?utf8=%E2%9C%93&query=react), SystemJS/jspm,  and ES6 (i.e. Babel) from npm.
+jQuery                 | [core-jquery-react-webpack-es6](core-jquery-react-webpack-es6/) |  Uses [Kendo UI for jQuery (cjs from npm)](https://github.com/telerik/kendo-ui-core) with React (i.e. React wrappers around KUI widgets), Webpack, and ES6 (i.e. Babel).
 
 You might also take a look at ["Kendo UI Core NPM Package Usage Example"](https://github.com/telerik/kendo-ui-npm-example) which has some variations ([browserify](http://browserify.org/), [typescript](https://www.typescriptlang.org/) etc...) not found in this repo.
 
