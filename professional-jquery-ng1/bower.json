@@ -15,6 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "kendo-ui": "kendo-ui-core#^2016.2.727"
+    "kendo-ui": "https://bower.telerik.com/bower-kendo-ui.git#~2016.2.727"
   }
 }

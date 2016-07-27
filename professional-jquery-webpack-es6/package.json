@@ -23,7 +23,7 @@
     "webpack": "^1.13.0"
   },
   "dependencies": {
-    "jquery": "2.1.4",
-    "kendo": "git+https://bower.telerik.com/npm-kendo-ui.git#2016.2.607"
+    "jquery": "2.2.4",
+    "kendo": "git+https://bower.telerik.com/npm-kendo-ui.git#2016.2.727"
   }
 }
