@@ -21,8 +21,7 @@
   },
   "dependencies": {
     "deep-diff": "^0.3.4",
-    "jquery": "2.1.4",
-    "kendo-ui-core": "^2016.2.607",
+    "kendo-ui-core": "^2016.2.727",
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
   }

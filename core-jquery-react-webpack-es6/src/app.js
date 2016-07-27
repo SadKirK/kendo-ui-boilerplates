@@ -71,27 +71,20 @@ var App = React.createClass({
 					<input className="kendoDropDownList" />
 			</KendoDropDownList>
 			&nbsp;&nbsp;&nbsp;
-			<KendoDropDownList>
-				<select>
+
+			<KendoDropDownList selector="#kuiddl">
+				<div style={{marginTop:150}}>
+				<select id="kuiddl">
 					<option>S - 6 3/5"</option>
 					<option>M - 7 1/4"</option>
 					<option>L - 7 1/8"</option>
 					<option>XL - 7 5/8"</option>
 				</select>
+				</div>
 			</KendoDropDownList>
-
   		</div>
   	);
   }
 });
 
 ReactDOM.render(<App />, document.getElementById('app'));
-
-{/*<KendoDropDownList>
-	<select>
-		<option>S - 6 3/4"</option>
-		<option>M - 7 1/4"</option>
-		<option>L - 7 1/8"</option>
-		<option>XL - 7 5/8"</option>
-	</select>
-</KendoDropDownList>*/}

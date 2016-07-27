@@ -1,54 +1,57 @@
-import $ from 'jquery';
+// import/require dependencies
 import kuidropdown from 'kendo-ui-core/js/kendo.dropdownlist.js';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import deepDiff from 'deep-diff';
 
+// create a React component, that is a wrapper for a Kendo UI widget
 const KendoDropDownList = React.createClass({
-	componentDidMount: function() {//comonent is in the DOM, so do stuff to it
-		//store reference to:
-		//1. element node widget is invoked on
-		//2. element node widget, wrapped with jQuery
-		//3. instance of widget
-		var elementNode, $elementNode, widgetInstance;
-		this.elementNode = elementNode = ReactDOM.findDOMNode(this);
-		this.$elementNode = $elementNode = $(elementNode);
 
-		//instantiate the Kendo UI widget from props or one prop called options
-		$elementNode.kendoDropDownList(this.props.options);
+	//component is in the DOM, so do stuff to it in this callback
+	componentDidMount: function() {
+		//get, child element node for this component
+		var elementNode = ReactDOM.findDOMNode(this);
 
-		//saved instance reference now that it is created
-		this.widgetInstance = widgetInstance = $elementNode.getKendoDropDownList();
+		//determine if a selector was passed on which to invoke the KUI widget
+		if(this.props.selector){
+			elementNode = elementNode.querySelector(this.props.selector);
+		}
 
-		//if props are avaliable for events, triggers, unbind events, or methods make it happen
+		//instantiate and save reference to the Kendo UI widget on elementNode
+		//note I am not using jQuery plugin to instantiate, don't want to wait for namespace on $.fn
+		this.widgetInstance = new kuidropdown.ui.DropDownList(elementNode,this.props.options);
+
+		//if props are avaliable for events, triggers, unbind events, or methods make it happen now
 		this.props.events ? this.bindEventsToKendoWidget(this.props.events) : null;
 		this.props.methods ? this.callKendoWidgetMethods(this.props.methods) : null;
 		this.props.triggerEvents ? this.triggerKendoWidgetEvents(this.props.triggerEvents) : null;
-		this.props.unbindEvents ? this.unbindEventsToKendoWidget(this.props.unbindEvents) : null;
 	},
+
+	//instance methods for updating widget
 	triggerKendoWidgetEvents:function(events){
-		events.forEach(function(event){
+		events.forEach(function(event){//loop over events, and trigger
 			this.widgetInstance.trigger(event);
 		}, this);
 	},
 	bindEventsToKendoWidget:function(events){
-		Object.keys(events).forEach(function(event){
+		Object.keys(events).forEach(function(event){//loop over events and bind
 			this.widgetInstance.bind(event,events[event]);
 		}, this);
 	},
 	unbindEventsToKendoWidget:function(events){
-		events.forEach(function(event){
+		events.forEach(function(event){//loop ove revents and unbind
 			this.widgetInstance.unbind(event);
 		}, this);
 	},
 	callKendoWidgetMethods:function(methods){
-		Object.keys(methods).forEach(function(method){
+		Object.keys(methods).forEach(function(method){//loop over methods and call
 		    this.widgetInstance[method](...methods[method])
 		}, this);
 	},
+
 	//not called on inital render, but whenever parent state changes this is called
 	componentWillReceiveProps: function(nextProps){
-		//have too, because these are functions, for now, thinking about stringing them and comparing
+		//always update the widget with nextProp changes if avaliable
 		if(nextProps.events){
 			this.bindEventsToKendoWidget(nextProps.events);
 		}
@@ -59,6 +62,7 @@ const KendoDropDownList = React.createClass({
 			}
 		}
 
+		//try and determine if any of the nextProps have changed, and if so, update the widget
 		if(nextProps.methods){
 			if(deepDiff(nextProps.methods,this.props.methods)){
 				this.callKendoWidgetMethods(nextProps.methods);
@@ -77,18 +81,20 @@ const KendoDropDownList = React.createClass({
 			}
 		}
   	},
-	shouldComponentUpdate: function(){
-		//doing this so Kendo UI widget is only ever create once
-		//then, when a component above this one renders, it will send new props
-		//that will update the kendo ui widget
-		return false;
-	},
+
+	//don't run render again, create widget once, then leave it alone
+	shouldComponentUpdate: function(){return false;},
+
+	//destory it, when the component is unmouted
 	componentWillUnmount: function() {
-		$(ReactDOM.findDOMNode(this)).getKendoDropDownList().destroy();
+		this.widgetInstance.destroy();
 	},
+
+	//use the passed in React nodes or a plain <div> if no React child nodes are defined
 	render: function() {
 		return this.props.children ? this.props.children : <div/>;
 	}
 });
 
+//export the wrapped component
 export default KendoDropDownList
