@@ -11,9 +11,9 @@
   "jspm": {
     "dependencies": {
       "css": "github:systemjs/plugin-css@^0.1.22",
-      "jquery": "npm:jquery@2.1.4",
+      "jquery": "npm:jquery@2.2.4",
       "json": "github:systemjs/plugin-json@^0.1.2",
-      "kendo-ui-core": "npm:kendo-ui-core@^2016.2.607",
+      "kendo-ui-core": "npm:kendo-ui-core@^2016.2.727",
       "text": "github:systemjs/plugin-text@^0.0.8"
     },
     "devDependencies": {

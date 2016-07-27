@@ -19,9 +19,9 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.22",
-    "jquery": "npm:jquery@2.1.4",
+    "jquery": "npm:jquery@2.2.4",
     "json": "github:systemjs/plugin-json@0.1.2",
-    "kendo-ui-core": "npm:kendo-ui-core@2016.2.603",
+    "kendo-ui-core": "npm:kendo-ui-core@2016.2.727",
     "text": "github:systemjs/plugin-text@0.0.8",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
