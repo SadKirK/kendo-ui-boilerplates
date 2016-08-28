@@ -5,7 +5,7 @@ import $ from 'jquery';
 import kuidropdown from 'kendo/js/kendo.dropdownlist.js';
 
 //CSS
-import 'kendo/css/web/kendo.common.core.min.css';
+import 'kendo/css/web/kendo.common.min.css';
 import 'kendo/css/web/kendo.default.min.css';
 
 //Template
